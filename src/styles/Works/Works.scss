@@ -1,6 +1,7 @@
 .works {
   position: relative;
   top: 0;
+  margin-bottom: 25em;
 
   &__container {
     position: relative;
@@ -25,10 +26,29 @@
     color: #ffffff;
     h1 {
       position: relative;
+      display: inline-block;
       animation: headingAnimation 2.5s ease-in-out 1;
       animation-delay: 0.5s;
       animation-fill-mode: forwards;
     }
+  }
+
+  &__grid {
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding-top: 2em;
+    // border: 2px solid red;
+  }
+
+  &__grid-container {
+    position: relative;
+    top: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    // padding: 0 2%;
+    // border: 2px solid green;
   }
 }
 
@@ -38,7 +58,7 @@
     font-size: 2em;
   }
   100% {
-    left: -40%;
+    left: -43%;
     font-size: 0.5em;
     letter-spacing: 0.05em;
   }

@@ -28,6 +28,24 @@ const Hero = () => {
                 alphbets[i].classList.add('alphabet-animated')
             })
         }
+
+
+        // Works section Project Card Collapible Bar functinality code
+        const collapibleBar = document.getElementsByClassName('project-card__header');
+        let i;
+        for (i = 0; i < collapibleBar.length; i++) {
+            collapibleBar[i].addEventListener('click', function () {
+                var content = this.nextElementSibling
+                console.log(content)
+                if (content.style.display === 'flex') {
+                    content.style.display = 'none';
+                    this.classList.remove('project-card__header--expanded');
+                } else {
+                    content.style.display = 'flex';
+                    this.classList.add('project-card__header--expanded');
+                }
+            })
+        }
     }
 
     // const alphabet = useRef();
