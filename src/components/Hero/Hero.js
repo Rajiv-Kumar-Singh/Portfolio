@@ -2,62 +2,39 @@ import React from 'react'
 
 import '../../styles/Hero/Hero.scss'
 
+import '../../Animation/animation'
+
 const Hero = () => {
 
     // window.onload = function () {
     //     const alphbets = document.getElementsByClassName('hero__alphabet');
     //     for (let i = 0; i <= alphbets.length; i++) {
-    //         alphbets[i].addEventListener('animationend', function () {
+    //         alphbets[i]?.addEventListener('animationend', function () {
     //             alphbets[i].classList.remove('alphabet-animated');
     //         });
 
-    //         alphbets[i].addEventListener('mouseover', function () {
+    //         alphbets[i]?.addEventListener('mouseover', function () {
     //             alphbets[i].classList.add('alphabet-animated')
     //         })
     //     }
-    // };
-
-    window.onload = function () {
-        const alphbets = document.getElementsByClassName('hero__alphabet');
-        for (let i = 0; i <= alphbets.length; i++) {
-            alphbets[i]?.addEventListener('animationend', function () {
-                alphbets[i].classList.remove('alphabet-animated');
-            });
-
-            alphbets[i]?.addEventListener('mouseover', function () {
-                alphbets[i].classList.add('alphabet-animated')
-            })
-        }
 
 
-        // Works section Project Card Collapible Bar functinality code
-        const collapibleBar = document.getElementsByClassName('project-card__header');
-        let i;
-        for (i = 0; i < collapibleBar.length; i++) {
-            collapibleBar[i].addEventListener('click', function () {
-                var content = this.nextElementSibling
-                console.log(content)
-                if (content.style.display === 'flex') {
-                    content.style.display = 'none';
-                    this.classList.remove('project-card__header--expanded');
-                } else {
-                    content.style.display = 'flex';
-                    this.classList.add('project-card__header--expanded');
-                }
-            })
-        }
-    }
-
-    // const alphabet = useRef();
-    // useEffect(() => {
-    //     const alphabetRef = alphabet.current;
-    //     alphabetRef.addEventListener('animationend', function () {
-    //         alphabetRef.classList.remove('alphabet-animated');
-    //     });
-    //     alphabetRef.addEventListener('mouseover', function () {
-    //         alphabetRef.classList.add('alphabet-animated')
-    //     })
-    // }, [])
+    //     // Works section Project Card Collapible Bar functinality code
+    //     const collapibleBar = document.getElementsByClassName('project-card__header');
+    //     let i;
+    //     for (i = 0; i < collapibleBar.length; i++) {
+    //         collapibleBar[i].addEventListener('click', function () {
+    //             var content = this.nextElementSibling
+    //             if (content.style.display === 'flex') {
+    //                 content.style.display = 'none';
+    //                 this.classList.remove('project-card__header--expanded');
+    //             } else {
+    //                 content.style.display = 'flex';
+    //                 this.classList.add('project-card__header--expanded');
+    //             }
+    //         })
+    //     }
+    // }
 
     return (
         <>
@@ -78,7 +55,7 @@ const Hero = () => {
                         <h1>FRONTEND</h1>
                     </div>
                     <div className="hero__text">
-                        <h2><span>Dev</span>eloper <span>.</span></h2>
+                        <h2><span>Dev</span>eloper <span className="hero__dot">.</span></h2>
                     </div>
                 </div>
             </div>

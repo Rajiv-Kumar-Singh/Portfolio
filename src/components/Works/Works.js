@@ -4,6 +4,8 @@ import React, { useState, useEffect } from 'react'
 import '../../styles/Works/Works.scss'
 
 import data from '../../data'
+
+import '../../Animation/animation'
 import ProjectCard from '../ProjectCard';
 
 const Works = () => {
@@ -27,7 +29,7 @@ const Works = () => {
         return scrollPosition;
     };
 
-    if (useScrollPosition() > 380) {
+    if (useScrollPosition() > 500) {
         const heading = document.getElementById('works__heading');
         heading.classList.add('works__heading')
     }

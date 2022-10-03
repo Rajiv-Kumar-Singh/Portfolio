@@ -13,12 +13,12 @@ const ProjectCard = (props) => {
                     <div className="project-card__header">
                         <h3>{props.cardContent.heading}</h3>
                     </div>
-                    <p className="project-card__description">
-                        {props.cardContent.description}
-                    </p>
-                    {/* <div className="project-card__header-arrow">
-                        <img src={angleDown} alt="icon" />
-                    </div> */}
+                    <div className="project-card__description">
+                        <div className='project-card__description-content'>
+                            <p>{props.cardContent.description}</p>
+                            <a href="https://arduino-rv.herokuapp.com/" target="_blank" rel="noreferrer">{props.cardContent.buttonText}</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>
