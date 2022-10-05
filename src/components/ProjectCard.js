@@ -8,7 +8,7 @@ const ProjectCard = (props) => {
 
     return (
         <>
-            <div className="project-card" data-aos='fade-down' data-aos-delay={props.cardContent.animationDelay}>
+            <div className="project-card" data-aos='fade-down' data-aos-once="true" data-aos-delay={props.cardContent.animationDelay}>
                 <div className="project-card__container">
                     <div className="project-card__header">
                         <h3>{props.cardContent.heading}</h3>

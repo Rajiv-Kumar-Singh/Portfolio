@@ -3,6 +3,7 @@
   position: relative;
   top: 0;
   margin-bottom: 25em;
+  padding-top: 3em;
   background-color: #000000;
 
   &__container {
@@ -60,58 +61,67 @@
     position: relative;
     top: 0;
     width: 28vw;
-    h1 {
-      position: absolute;
-      top: -0.75em;
-      left: -0.3em;
-      font-family: "RedWingBold";
-      letter-spacing: 0.1em;
-      font-size: 8em;
-      font-weight: 900;
-      z-index: 1;
-      color: #212020;
-
-      span {
-        -webkit-text-stroke: 1px #212020;
-        color: #000000;
-      }
-    }
-    h2 {
-      position: relative;
-      z-index: 2;
-      font-family: "RedWingBold";
-      letter-spacing: 0.1em;
-      font-weight: 200;
-      font-size: 2em;
+    a {
+      text-decoration: none;
       color: #ffffff;
+      h1 {
+        position: absolute;
+        top: -0.75em;
+        left: -0.3em;
+        font-family: "RedWingBold";
+        letter-spacing: 0.1em;
+        font-size: 8em;
+        font-weight: 900;
+        z-index: 1;
+        color: #212020;
 
-      span {
-        color: #000000;
-        -webkit-text-stroke: 1px rgb(249 249 249);
+        span {
+          -webkit-text-stroke: 1px #212020;
+          color: #000000;
+        }
+      }
+      h2 {
+        position: relative;
+        z-index: 2;
+        font-family: "RedWingBold";
+        letter-spacing: 0.1em;
+        font-weight: 200;
+        font-size: 2em;
+        color: #ffffff;
+
+        span {
+          color: #000000;
+          -webkit-text-stroke: 1px rgb(249 249 249);
+        }
+
+        span:hover {
+          animation: hoverAnimation 1s ease-in-out;
+          animation-fill-mode: forwards;
+        }
       }
 
-      span:hover {
-        animation: hoverAnimation 1s ease-in-out;
-        animation-fill-mode: forwards;
-      }
-    }
+      p {
+        font-weight: lighter;
+        max-width: 100%;
+        min-width: 12em;
+        position: relative;
+        z-index: 2;
+        padding-right: 3em;
 
-    p {
-      font-weight: lighter;
-      max-width: 100%;
-      min-width: 12em;
-      position: relative;
-      z-index: 2;
-      padding-right: 3em;
-
-      span:nth-child(1) {
-        font-weight: 400;
-        margin-bottom: 0.3em;
-        display: inline-block;
+        span:nth-child(1) {
+          font-weight: 400;
+          margin-bottom: 0.3em;
+          display: inline-block;
+        }
       }
 
       ul {
-        line-height: 1;
+        font-weight: lighter;
+        max-width: 100%;
+        min-width: 12em;
+        position: relative;
+        z-index: 2;
+        padding-right: 3em;
         li {
           list-style: none;
           span {

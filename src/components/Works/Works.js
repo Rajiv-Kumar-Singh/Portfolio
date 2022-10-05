@@ -59,7 +59,7 @@ const Works = () => {
             <div className="works">
                 <div className="works__container">
                     <div className="works__header" id='works__heading' >
-                        <h1 data-aos='fade-down' data-aos-delay='0' data-aos-offset="20">WORKS.</h1>
+                        <h1 data-aos='fade-down' data-aos-delay='0' data-aos-offset="0">WORKS.</h1>
                         <p></p>
                     </div>
                     <div className="works__grid">

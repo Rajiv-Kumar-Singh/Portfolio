@@ -43,6 +43,11 @@ const Hero = () => {
                     <div className="hero__text">
                         <h2><span>Dev</span>eloper <span className="hero__dot">.</span></h2>
                     </div>
+                    <div className="hero__sider-bar-container">
+                        <div className="hero__side-bar"><p>adfasd</p></div>
+                        <div className="hero__side-bar"><p>asdf</p></div>
+                        <div className="hero__side-bar"><p>asdfsad</p></div>
+                    </div>
                 </div>
             </div>
         </>
