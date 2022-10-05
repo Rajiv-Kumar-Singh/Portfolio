@@ -11,12 +11,17 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
   background: #000000;
 }
 
 body::-webkit-scrollbar {
   height: 0.15em;
   width: 0.15em;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* Track */

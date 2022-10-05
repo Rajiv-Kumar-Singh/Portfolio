@@ -29,39 +29,26 @@ const About = () => {
         heading.classList.add('about__heading')
     }
 
-    // Adding 3D Text Sphere
-    // useEffect(() => {
-    //     const script = document.createElement('script');
-
-    //     script.src = "https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js";
-    //     script.async = true;
-
-    //     document.body.appendChild(script);
-
-    //     return () => {
-    //         document.body.removeChild(script);
-    //     }
-    // }, []);
-
-    // <TagCloud container={container} texts={texts} options={options} />
-
-
     useEffect(() => {
-        const container = '.tagcloud';
-        const texts = [
-            '3D', 'TagCloud', 'JavaScript',
-            'CSS3', '3D', 'TagCloud', 'JavaScript',
-            'CSS3',
-        ];
-        const options = {
-            radius: 230,
-            maxSpeed: 'fast',
-            initSpeed: 'fast',
-            keep: true
-        };
+        return () => {
+            const container = '.tagcloud';
+            const texts = [
+                'HTML', 'CSS', 'JavaScript',
+                'React', 'Vue', 'NodeJS', 'Shopify',
+                'Jquery', 'ES6', 'GIT', 'GITHUB'
+            ];
 
-        TagCloud(container, texts, options);
-    }, []);
+            const options = {
+                radius: 230,
+                maxSpeed: 'fast',
+                initSpeed: 'normal',
+                keep: true
+            };
+
+            TagCloud(container, texts, options);
+        }
+    }, [])
+
     return (
         <>
             <div className="about">
@@ -71,6 +58,34 @@ const About = () => {
                         <p></p>
                     </div>
 
+                    <div className="about__details-container">
+                        <div className="about__details" data-aos='fade-down' data-aos-offset="0" data-aos-delay='0' data-aos-once="true">
+                            <h1>0<span>1</span></h1>
+                            <h2>H<span>ello,</span></h2>
+                            <p>I am <span>Rajiv Kumar Singh.</span> <br /> Highly passoinate front-end Developer with more than 6 months of experience.</p>
+                        </div>
+                        <div className="about__details" data-aos='fade-down' data-aos-offset="-100" data-aos-delay='200' data-aos-once="true">
+                            <h1>0<span>2</span></h1>
+                            <h2>E<span>xperience</span></h2>
+                            <p><span>6 month of experience.</span><br />I have more than 6 months of experience in developing highly responsive frontend of websites using React.js and Vue.js</p>
+                        </div>
+                        <div className="about__details" data-aos='fade-down' data-aos-offset="130" data-aos-delay='500' data-aos-once="true">
+                            <h1>0<span>3</span></h1>
+                            <h2>I<span>nternships</span></h2>
+                            <p><span>Interned at -</span> <br />
+                                <ul>
+                                    <li><span>Dyeus</span> - Front-end Developer </li>
+                                    <li><span>ONGC</span> - Industrial Trainee </li>
+                                    <li><span>Clear Exam</span> - HTML Developer </li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div className="about__details" data-aos='fade-down' data-aos-offset="-100" data-aos-delay='600' data-aos-once="true">
+                            <h1>0<span>4</span></h1>
+                            <h2>E<span>ngineering</span></h2>
+                            <p><span>NIT Agartala </span><br />Completed Engineering in Electronics and Instrumentation Engineering from National Institute of Technology, Agartala</p>
+                        </div>
+                    </div>
                     <span className="tagcloud"></span>
                 </div>
             </div>

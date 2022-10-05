@@ -5,7 +5,7 @@ import '../../styles/Works/Works.scss'
 
 import data from '../../data'
 
-import '../../Animation/animation'
+// Importing child component 
 import ProjectCard from '../ProjectCard';
 
 const Works = () => {
@@ -34,6 +34,25 @@ const Works = () => {
         heading.classList.add('works__heading')
     }
 
+    // Adding click functionality to Header of the cards 
+    useEffect(() => {
+        return () => {
+            const collapibleBar = document.getElementsByClassName('project-card__header');
+            let i;
+            for (i = 0; i < collapibleBar.length; i++) {
+                collapibleBar[i].addEventListener('click', function () {
+                    var content = this.nextElementSibling
+                    if (content.style.display === 'flex') {
+                        content.style.display = 'none';
+                        this.classList.remove('project-card__header--expanded');
+                    } else {
+                        content.style.display = 'flex';
+                        this.classList.add('project-card__header--expanded');
+                    }
+                })
+            }
+        }
+    }, [])
 
     return (
         <>

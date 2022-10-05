@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 .about {
   position: relative;
   top: 0;
@@ -8,7 +9,7 @@
     position: relative;
     top: 0;
     padding: 2% 5%;
-    color: aliceblue;
+    color: #ffffff;
   }
 
   &__header {
@@ -17,14 +18,13 @@
     text-align: center;
     font-family: "RedWingBold";
     font-weight: bolder;
-    color: #212020;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     font-size: 7vw;
+    color: #212020;
   }
 
   &__heading {
-    color: #ffffff;
     h1 {
       position: relative;
       display: inline-block;
@@ -33,6 +33,107 @@
       animation-fill-mode: forwards;
     }
   }
+
+  @keyframes headingAnimation {
+    0% {
+      left: 0;
+      font-size: 2em;
+    }
+    100% {
+      left: -43%;
+      font-size: 0.7em;
+      letter-spacing: 0.05em;
+      color: #ffffff;
+    }
+  }
+
+  &__details-container {
+    position: relative;
+    top: 0;
+    margin-top: 10%;
+    padding: 0 2em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  &__details {
+    position: relative;
+    top: 0;
+    width: 28vw;
+    h1 {
+      position: absolute;
+      top: -0.75em;
+      left: -0.3em;
+      font-family: "RedWingBold";
+      letter-spacing: 0.1em;
+      font-size: 8em;
+      font-weight: 900;
+      z-index: 1;
+      color: #212020;
+
+      span {
+        -webkit-text-stroke: 1px #212020;
+        color: #000000;
+      }
+    }
+    h2 {
+      position: relative;
+      z-index: 2;
+      font-family: "RedWingBold";
+      letter-spacing: 0.1em;
+      font-weight: 200;
+      font-size: 2em;
+      color: #ffffff;
+
+      span {
+        color: #000000;
+        -webkit-text-stroke: 1px rgb(249 249 249);
+      }
+
+      span:hover {
+        animation: hoverAnimation 1s ease-in-out;
+        animation-fill-mode: forwards;
+      }
+    }
+
+    p {
+      font-weight: lighter;
+      max-width: 100%;
+      min-width: 12em;
+      position: relative;
+      z-index: 2;
+      padding-right: 3em;
+
+      span:nth-child(1) {
+        font-weight: 400;
+        margin-bottom: 0.3em;
+        display: inline-block;
+      }
+
+      ul {
+        line-height: 1;
+        li {
+          list-style: none;
+          span {
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+
+  &__details:nth-child(even) {
+    margin-top: 15em;
+  }
+}
+
+@keyframes hoverAnimation {
+  0% {
+    color: #000000;
+  }
+  100% {
+    color: #ffffff;
+  }
 }
 
 .tagcloud {
@@ -40,11 +141,16 @@
   top: 100px;
   left: 32%;
   font-weight: bold;
-  letter-spacing: 1px;
-  font-family: "Bebas Neue", cursive;
-  font-size: 20px;
+  letter-spacing: 0.0625em;
+  font-family: "RedWingBold";
+  font-size: 1.3em;
+}
 
-  .tagcloud:nth-child(2) {
-    display: none;
-  }
+/* Change color of each text in sphere on hover   */
+.tagcloud--item {
+  color: #00ffffff;
+  text-transform: uppercase;
+}
+.tagcloud--item:hover {
+  color: #ff6347;
 }
