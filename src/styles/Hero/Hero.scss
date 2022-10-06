@@ -112,18 +112,32 @@
     background-color: #00ffff;
     margin-bottom: 0.5em;
     cursor: pointer;
-    color: #ffffff;
+    color: #00ffff;
     overflow: hidden;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1em;
+    // overflow: hidden;
   }
 
   &__side-bar:hover {
-    width: 3em;
+    // width: 3em;
     background-color: transparent;
     border-right: 0.2em solid #00ffff;
+    color: #00ffff;
+    animation: socialAccounts 0.5s ease-in-out 1;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes socialAccounts {
+  0% {
+    width: 0.2em;
+  }
+  100% {
+    width: 3em;
   }
 }
 

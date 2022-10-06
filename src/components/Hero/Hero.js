@@ -1,5 +1,8 @@
 import React, { useEffect } from 'react'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faGithub, faYoutube } from "@fortawesome/free-brands-svg-icons"
+
 import '../../styles/Hero/Hero.scss'
 
 
@@ -44,9 +47,9 @@ const Hero = () => {
                         <h2><span>Dev</span>eloper <span className="hero__dot">.</span></h2>
                     </div>
                     <div className="hero__sider-bar-container">
-                        <div className="hero__side-bar"><p>adfasd</p></div>
-                        <div className="hero__side-bar"><p>asdf</p></div>
-                        <div className="hero__side-bar"><p>asdfsad</p></div>
+                        <div className="hero__side-bar"><FontAwesomeIcon icon={faLinkedin} size="2x" /></div>
+                        <div className="hero__side-bar"><FontAwesomeIcon icon={faGithub} size="2x" /></div>
+                        <div className="hero__side-bar"><FontAwesomeIcon icon={faYoutube} size="2x" /></div>
                     </div>
                 </div>
             </div>
