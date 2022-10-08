@@ -41,6 +41,43 @@ export const config = {
                 },
             ]
         },
+        internships: {
+            internship: [
+                {
+                    companyName: "Dyeus",
+                    role: "Front-end Developer",
+                    introText: "",
+                    duration: "29/03/2022 - 29/05/2022",
+                    keyPointOne: "Developing front-end of multiple website using ReactJS",
+                    keyPointTwo: "Learned Liquid template language and built new sections in shopify store",
+                    keyPointThree: "Built new user-facing features and reusable code",
+                    keyPointFour: "Followed best practices, conventions and instruction provided by the company to deliver high quality code",
+                    offsetValue: "0"
+                },
+                {
+                    companyName: "ONGC",
+                    role: "Industrial Trainee",
+                    introText: "",
+                    duration: "14/06/2021 - 14/07/2021",
+                    keyPointOne: "Undergone Virtual Industrial Training",
+                    keyPointTwo: "Learned to code Arduino and NodeMCU ESP8266",
+                    keyPointThree: "Created an IoT project which is very helpful for minimizing fire hazards",
+                    keyPointFour: "Built an website which shows real-time data of various sensors like MQ2 Gas Senor and DHT11 Temperature and Humidity sensor",
+                    offsetValue: "-200"
+                },
+                {
+                    companyName: "Clear Exam",
+                    role: "HTML Developer",
+                    introText: "",
+                    duration: "10/09/2020 - 10/11/2020",
+                    keyPointOne: "Worked in a team to develop quizzes using HTML, CSS and JavaScript",
+                    keyPointTwo: "",
+                    keyPointThree: "",
+                    keyPointFour: "",
+                    offsetValue: "-1000"
+                },
+            ]
+        },
     },
     portfolio2: {
         brandName: "Brand Two",

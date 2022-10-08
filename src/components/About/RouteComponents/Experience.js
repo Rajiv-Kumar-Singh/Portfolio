@@ -30,7 +30,7 @@ const Experience = () => {
                                     <span>Building reusable code</span>
                                 </li>
                                 <li data-aos='fade-right' data-aos-delay='800'>
-                                    <span>Building shopify store from scratch.</span>
+                                    <span>Building Shopify store from scratch.</span>
                                 </li>
                             </ul>
                         </div>
