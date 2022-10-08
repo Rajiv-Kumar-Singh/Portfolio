@@ -12,6 +12,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Intro from './components/About/RouteComponents/Intro';
 import Experience from './components/About/RouteComponents/Experience';
 import Internships from './components/About/RouteComponents/Internships';
+import Graduation from './components/About/RouteComponents/Graduation';
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
           <Route exact path="/about/intro" element={<Intro />} />
           <Route exact path="/about/experience" element={<Experience />} />
           <Route exact path="/about/internships" element={<Internships />} />
-          <Route exact path="/about/graduation" element={<Intro />} />
+          <Route exact path="/about/graduation" element={<Graduation />} />
         </Routes>
       </BrowserRouter>
     </>

@@ -76,7 +76,7 @@ const About = () => {
                                 <p><span>6 month of experience.</span><br />I have more than 6 months of experience in developing highly responsive frontend of websites using React.js and Vue.js</p>
                             </Link>
                         </div>
-                        <div className="about__details" data-aos='fade-down' data-aos-offset="100" data-aos-delay='500' data-aos-once="true">
+                        <div className="about__details" data-aos='fade-down' data-aos-offset="50" data-aos-delay='500' data-aos-once="true">
                             <Link to="/about/internships">
                                 <h1>0<span>3</span></h1>
                                 <h2>I<span>nternships</span></h2>

@@ -132,6 +132,46 @@
     }
   }
 
+  // &__details:nth-child(1) {
+  //   a {
+  //     h1 {
+  //       span {
+  //         -webkit-text-stroke: 1px #00ffff3b;
+  //       }
+  //     }
+  //   }
+  // }
+
+  // &__details:nth-child(2) {
+  //   a {
+  //     h1 {
+  //       span {
+  //         -webkit-text-stroke: 1px #ffa50063;
+  //       }
+  //     }
+  //   }
+  // }
+
+  // &__details:nth-child(3) {
+  //   a {
+  //     h1 {
+  //       span {
+  //         -webkit-text-stroke: 1px #5ced735c;
+  //       }
+  //     }
+  //   }
+  // }
+
+  // &__details:nth-child(4) {
+  //   a {
+  //     h1 {
+  //       span {
+  //         -webkit-text-stroke: 1px #b19cd952;
+  //       }
+  //     }
+  //   }
+  // }
+
   &__details:nth-child(even) {
     margin-top: 15em;
   }

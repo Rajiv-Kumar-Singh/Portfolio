@@ -74,7 +74,7 @@ export const config = {
                     keyPointTwo: "",
                     keyPointThree: "",
                     keyPointFour: "",
-                    offsetValue: "-1000"
+                    offsetValue: "-500"
                 },
             ]
         },
