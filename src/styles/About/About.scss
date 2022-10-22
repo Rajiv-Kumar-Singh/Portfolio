@@ -2,7 +2,6 @@
 .about {
   position: relative;
   top: 0;
-  margin-bottom: 25em;
   padding-top: 3em;
   background-color: #000000;
 
@@ -184,23 +183,4 @@
   100% {
     color: #ffffff;
   }
-}
-
-.tagcloud {
-  display: inline-block;
-  top: 100px;
-  left: 32%;
-  font-weight: bold;
-  letter-spacing: 0.0625em;
-  font-family: "RedWingBold";
-  font-size: 1.3em;
-}
-
-/* Change color of each text in sphere on hover   */
-.tagcloud--item {
-  color: #00ffffff;
-  text-transform: uppercase;
-}
-.tagcloud--item:hover {
-  color: #ff6347;
 }

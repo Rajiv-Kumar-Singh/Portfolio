@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Link } from "react-router-dom";
 
 // Importing TagCloud for  3D Rotating Text Sphere 
-import TagCloud from 'TagCloud'
+// import TagCloud from 'TagCloud'
 
 import '../../styles/About/About.scss'
 
@@ -32,25 +32,25 @@ const About = () => {
         heading.classList.add('about__heading')
     }
 
-    useEffect(() => {
-        return () => {
-            const container = '.tagcloud';
-            const texts = [
-                'HTML', 'CSS', 'JavaScript',
-                'React', 'Vue', 'NodeJS', 'Shopify',
-                'Jquery', 'ES6', 'GIT', 'GITHUB'
-            ];
+    // useEffect(() => {
+    //     return () => {
+    //         const container = '.tagcloud';
+    //         const texts = [
+    //             'HTML', 'CSS', 'JavaScript',
+    //             'React', 'Vue', 'NodeJS', 'Shopify',
+    //             'Jquery', 'ES6', 'GIT', 'GITHUB'
+    //         ];
 
-            const options = {
-                radius: 230,
-                maxSpeed: 'fast',
-                initSpeed: 'normal',
-                keep: true
-            };
+    //         const options = {
+    //             radius: 230,
+    //             maxSpeed: 'normal',
+    //             initSpeed: 'normal',
+    //             keep: true
+    //         };
 
-            TagCloud(container, texts, options);
-        }
-    }, [])
+    //         TagCloud(container, texts, options);
+    //     }
+    // }, [])
 
     return (
         <>
@@ -97,7 +97,7 @@ const About = () => {
                             </Link>
                         </div>
                     </div>
-                    <span className="tagcloud"></span>
+                    {/* <span className="tagcloud"></span> */}
                 </div>
             </div>
         </>

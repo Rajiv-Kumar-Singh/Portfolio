@@ -13,13 +13,14 @@ import Intro from './components/About/RouteComponents/Intro';
 import Experience from './components/About/RouteComponents/Experience';
 import Internships from './components/About/RouteComponents/Internships';
 import Graduation from './components/About/RouteComponents/Graduation';
+import Skill from './components/Skill/Skill';
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route exact path="/" element={<><Header /> <Hero /> <Works /> <About /></>} />
+          <Route exact path="/" element={<><Header /> <Hero /> <Works /> <About /> <Skill /></>} />
           <Route exact path="/about/intro" element={<Intro />} />
           <Route exact path="/about/experience" element={<Experience />} />
           <Route exact path="/about/internships" element={<Internships />} />

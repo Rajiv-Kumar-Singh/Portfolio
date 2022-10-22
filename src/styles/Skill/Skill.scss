@@ -1,0 +1,115 @@
+.skill {
+  position: relative;
+  top: 0;
+  &__main-container {
+    position: relative;
+    top: 0;
+    padding: 2% 5%;
+    color: #ffffff;
+  }
+
+  &__inner-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__header {
+    position: relative;
+    top: 0;
+    text-align: center;
+    font-family: "RedWingBold";
+    font-weight: bolder;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-size: 7vw;
+    color: #212020;
+  }
+
+  &__heading {
+    h1 {
+      position: relative;
+      display: inline-block;
+      animation: headingAnimation 2.5s ease-in-out 1;
+      animation-delay: 0.5s;
+      animation-fill-mode: forwards;
+    }
+  }
+
+  @keyframes headingAnimation {
+    0% {
+      left: 0;
+      font-size: 2em;
+    }
+    100% {
+      left: -43%;
+      font-size: 0.7em;
+      letter-spacing: 0.05em;
+      color: #ffffff;
+    }
+  }
+
+  &__info {
+    height: 100%;
+  }
+
+  &__skill-tags {
+    letter-spacing: 0.05em;
+    span {
+      font-family: "RedWingLight";
+      display: inline-block;
+      padding: 0.2em 1em;
+      border-radius: 0.25em;
+      background-color: #1c1e1e;
+      color: #00ffff;
+    }
+  }
+
+  &__details {
+    margin-top: 1.5em;
+    h4 {
+      font-family: "RedWingLight";
+      letter-spacing: 0.1em;
+      font-size: 1em;
+    }
+
+    ul {
+      list-style-position: inside;
+      margin-top: 0.2em;
+      li {
+        letter-spacing: 0.05em;
+        color: #00ffff;
+        span {
+          color: #ffffff;
+          font-family: "RedWingLight";
+        }
+      }
+    }
+  }
+
+  &__cloud {
+    .tagcloud {
+      display: inline-block;
+      top: 0;
+      left: 0;
+      font-weight: bold;
+      letter-spacing: 0.0625em;
+      font-family: "RedWingBold";
+      font-size: 1.3em;
+    }
+    /* Change color of each text in sphere on hover   */
+    .tagcloud--item {
+      color: #00ffffff;
+      text-transform: uppercase;
+    }
+
+    .tagcloud--item:hover {
+      color: #ff6347;
+    }
+
+    .tagcloud:nth-child(2) {
+      display: none;
+    }
+  }
+}
