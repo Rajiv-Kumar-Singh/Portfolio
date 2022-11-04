@@ -89,6 +89,8 @@
   }
 
   &__cloud {
+    position: relative;
+    left: -8%;
     .tagcloud {
       display: inline-block;
       top: 0;

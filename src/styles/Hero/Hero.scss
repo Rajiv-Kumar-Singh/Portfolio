@@ -15,6 +15,21 @@
     align-items: center;
     padding: 2% 5%;
     // border: 2px solid red;
+
+    // &::before {
+    //   position: absolute;
+    //   top: 0;
+    //   content: "";
+    //   width: 100%;
+    //   height: 100%;
+    //   background: url("../../assets/images/blue-wave.jpg");
+    //   background-size: 100% 100%;
+    //   background-position: center;
+    //   background-attachment: fixed;
+    //   background-repeat: no-repeat;
+    //   opacity: 0.06;
+    //   filter: invert(10%);
+    // }
   }
 
   &__background-text {
@@ -46,7 +61,7 @@
       z-index: 4;
       height: 1.01em;
       -webkit-text-stroke: 1px #ffffff1a;
-      animation: textZoomAnimation 0.7s ease-in-out 1;
+      animation: textZoomAnimation 1s ease-in-out 1;
     }
     h1:nth-child(3) {
       position: absolute;
@@ -56,7 +71,7 @@
       width: 100%;
       z-index: 3;
       -webkit-text-stroke: 1px #ffffff1a;
-      animation: textInOutAnimation 1.2s ease-in-out 1;
+      // animation: textInOutAnimation 1.2s ease-in-out 1;
     }
   }
 

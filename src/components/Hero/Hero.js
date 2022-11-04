@@ -47,9 +47,9 @@ const Hero = () => {
                         <h2><span>Dev</span>eloper <span className="hero__dot">.</span></h2>
                     </div>
                     <div className="hero__sider-bar-container">
-                        <div className="hero__side-bar"><FontAwesomeIcon icon={faLinkedin} size="2x" /></div>
-                        <div className="hero__side-bar"><FontAwesomeIcon icon={faGithub} size="2x" /></div>
-                        <div className="hero__side-bar"><FontAwesomeIcon icon={faYoutube} size="2x" /></div>
+                        <div className="hero__side-bar" data-aos='fade-right' data-aos-delay='200'><FontAwesomeIcon icon={faLinkedin} size="2x" /></div>
+                        <div className="hero__side-bar" data-aos='fade-right' data-aos-delay='400'><FontAwesomeIcon icon={faGithub} size="2x" /></div>
+                        <div className="hero__side-bar" data-aos='fade-right' data-aos-delay='600'><FontAwesomeIcon icon={faYoutube} size="2x" /></div>
                     </div>
                 </div>
             </div>

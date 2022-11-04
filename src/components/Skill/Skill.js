@@ -38,12 +38,12 @@ const Skill = () => {
             const container = '.tagcloud';
             const texts = [
                 'HTML', 'CSS', 'SASS', 'JavaScript',
-                'React', 'Vue', 'NodeJS', 'Shopify',
+                'React', 'Vue', 'Nuxt', 'NodeJS', 'Shopify',
                 'Jquery', 'ES6', 'GIT', 'GITHUB'
             ];
 
             const options = {
-                radius: 230,
+                radius: 250,
                 maxSpeed: 'normal',
                 initSpeed: 'normal',
                 keep: true
@@ -102,7 +102,7 @@ const Skill = () => {
                             </div>
                         </div>
                         <div className="skill__cloud">
-                            <span className='tagcloud'></span>
+                            <span data-aos='zoom-in-up' data-aos-once="true" className='tagcloud'></span>
                         </div>
                     </div>
                 </div>

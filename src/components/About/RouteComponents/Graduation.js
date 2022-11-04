@@ -18,7 +18,7 @@ const Graduation = () => {
                     <div className="graduation__description">
                         <h1>NIT Agartala</h1>
                         <h2><FontAwesomeIcon icon={faCalendarDays} className="internships__calendar" />&nbsp;&nbsp;13/08/2018 - 31/07/2022</h2>
-                        <p>Completed B.Tech in Electronics and Instrumentation Engineering from National Institute of Technology Agartala.</p>
+                        <p>Pursued B.Tech in Electronics and Instrumentation Engineering from National Institute of Technology Agartala.</p>
                     </div>
                 </div>
             </div>
