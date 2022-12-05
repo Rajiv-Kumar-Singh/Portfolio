@@ -6,6 +6,7 @@
     top: 0;
     padding: 2% 5%;
     color: #ffffff;
+    margin-top: 2em;
   }
 
   &__inner-container {
@@ -18,22 +19,27 @@
   &__header {
     position: relative;
     top: 0;
-    text-align: center;
+    text-align: left;
     font-family: "RedWingBold";
     font-weight: bolder;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    font-size: 7vw;
-    color: #212020;
+    font-size: 2em;
+    color: #ffffff;
+    h1 {
+      span {
+        position: relative;
+      }
+    }
   }
 
   &__heading {
     h1 {
       position: relative;
       display: inline-block;
-      animation: headingAnimation 2.5s ease-in-out 1;
-      animation-delay: 0.5s;
-      animation-fill-mode: forwards;
+      // animation: headingAnimation 2.5s ease-in-out 1;
+      // animation-delay: 0.5s;
+      // animation-fill-mode: forwards;
     }
   }
 
@@ -96,14 +102,14 @@
   }
 
   &__cloud {
-    display: none;
+    // display: none;
     position: relative;
     left: -2%;
     .tagcloud {
       display: inline-block;
       top: 0;
       left: 0;
-      font-weight: bold;
+      font-weight: 300;
       letter-spacing: 0.0625em;
       font-family: "RedWingBold";
       font-size: 1.3em;
@@ -116,6 +122,51 @@
 
     .tagcloud--item:hover {
       color: #ff6347;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .tagcloud {
+      font-size: 1em;
+    }
+  }
+
+  @media screen and (max-width: 893px) {
+    &__inner-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__info {
+      order: 2;
+    }
+
+    &__cloud {
+      align-self: center;
+    }
+
+    &__details-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+
+    &__details {
+      width: 50%;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    &__header {
+      font-size: 1.33em;
+    }
+  }
+
+  @media screen and (max-width: 538px) {
+    &__details-container {
+      flex-direction: column;
+    }
+    &__details {
+      width: 100%;
     }
   }
 }

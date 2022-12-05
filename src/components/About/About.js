@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 // Importing TagCloud for  3D Rotating Text Sphere
@@ -7,28 +7,28 @@ import { Link } from "react-router-dom";
 import "../../styles/About/About.scss";
 
 const About = () => {
-  function useScrollPosition() {
-    const [scrollPosition, setScrollPosition] = useState(0);
+  // function useScrollPosition() {
+  //   const [scrollPosition, setScrollPosition] = useState(0);
 
-    useEffect(() => {
-      const updatePosition = () => {
-        setScrollPosition(window.pageYOffset);
-      };
-      window.addEventListener("scroll", updatePosition);
-      updatePosition();
+  //   useEffect(() => {
+  //     const updatePosition = () => {
+  //       setScrollPosition(window.pageYOffset);
+  //     };
+  //     window.addEventListener("scroll", updatePosition);
+  //     updatePosition();
 
-      return () => {
-        window.removeEventListener("scroll", updatePosition);
-      };
-    }, []);
+  //     return () => {
+  //       window.removeEventListener("scroll", updatePosition);
+  //     };
+  //   }, []);
 
-    return scrollPosition;
-  }
+  //   return scrollPosition;
+  // }
 
-  if (useScrollPosition() > 850) {
-    const heading = document.getElementById("about__heading");
-    heading.classList.add("about__heading");
-  }
+  // if (useScrollPosition() > 850) {
+  //   const heading = document.getElementById("about__heading");
+  //   heading.classList.add("about__heading");
+  // }
 
   // useEffect(() => {
   //     return () => {
@@ -56,7 +56,48 @@ const About = () => {
         <div className="about__container">
           <div className="about__header" id="about__heading">
             <h1 data-aos="fade-down" data-aos-delay="0" data-aos-offset="20">
-              About.
+              <span
+                data-aos="fade-down"
+                data-aos-delay="0"
+                data-aos-offset="200"
+              >
+                A
+              </span>
+              <span
+                data-aos="fade-down"
+                data-aos-delay="200"
+                data-aos-offset="200"
+              >
+                B
+              </span>
+              <span
+                data-aos="fade-down"
+                data-aos-delay="400"
+                data-aos-offset="200"
+              >
+                O
+              </span>
+              <span
+                data-aos="fade-down"
+                data-aos-delay="400"
+                data-aos-offset="200"
+              >
+                U
+              </span>
+              <span
+                data-aos="fade-down"
+                data-aos-delay="600"
+                data-aos-offset="200"
+              >
+                T
+              </span>
+              <span
+                data-aos="fade-down"
+                data-aos-delay="800"
+                data-aos-offset="200"
+              >
+                .
+              </span>
             </h1>
             <p></p>
           </div>

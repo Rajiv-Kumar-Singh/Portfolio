@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 
 import "../../styles/Works/Works.scss";
 
@@ -8,28 +8,28 @@ import data from "../../data";
 import ProjectCard from "../ProjectCard";
 
 const Works = () => {
-  function useScrollPosition() {
-    const [scrollPosition, setScrollPosition] = useState(0);
+  // function useScrollPosition() {
+  //   const [scrollPosition, setScrollPosition] = useState(0);
 
-    useEffect(() => {
-      const updatePosition = () => {
-        setScrollPosition(window.pageYOffset);
-      };
-      window.addEventListener("scroll", updatePosition);
-      updatePosition();
+  //   useEffect(() => {
+  //     const updatePosition = () => {
+  //       setScrollPosition(window.pageYOffset);
+  //     };
+  //     window.addEventListener("scroll", updatePosition);
+  //     updatePosition();
 
-      return () => {
-        window.removeEventListener("scroll", updatePosition);
-      };
-    }, []);
+  //     return () => {
+  //       window.removeEventListener("scroll", updatePosition);
+  //     };
+  //   }, []);
 
-    return scrollPosition;
-  }
+  //   return scrollPosition;
+  // }
 
-  if (useScrollPosition() > 100) {
-    const heading = document.getElementById("works__heading");
-    heading.classList.add("works__heading");
-  }
+  // if (useScrollPosition() > 100) {
+  //   const heading = document.getElementById("works__heading");
+  //   heading.classList.add("works__heading");
+  // }
 
   // Adding click functionality to Header of the cards
   useEffect(() => {
@@ -58,8 +58,49 @@ const Works = () => {
       <div className="works" id="work">
         <div className="works__container">
           <div className="works__header" id="works__heading">
-            <h1 data-aos="fade-down" data-aos-delay="0" data-aos-offset="0">
-              WORKS.
+            <h1 data-aos="fade-down">
+              <span
+                data-aos="fade-down"
+                data-aos-delay="0"
+                data-aos-offset="200"
+              >
+                W
+              </span>
+              <span
+                data-aos="fade-down"
+                data-aos-delay="200"
+                data-aos-offset="200"
+              >
+                O
+              </span>
+              <span
+                data-aos="fade-down"
+                data-aos-delay="400"
+                data-aos-offset="200"
+              >
+                R
+              </span>
+              <span
+                data-aos="fade-down"
+                data-aos-delay="600"
+                data-aos-offset="200"
+              >
+                K
+              </span>
+              <span
+                data-aos="fade-down"
+                data-aos-delay="800"
+                data-aos-offset="200"
+              >
+                S
+              </span>
+              <span
+                data-aos="fade-down"
+                data-aos-delay="1000"
+                data-aos-offset="200"
+              >
+                .
+              </span>
             </h1>
             <p></p>
           </div>
