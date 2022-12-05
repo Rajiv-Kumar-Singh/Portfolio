@@ -87,7 +87,7 @@ const Hero = () => {
                 N
               </span>
               <span
-                className="hero__alphabet"
+                className="hero__alphabet hero__alphabet--last"
                 data-aos="fade-up"
                 data-aos-delay="1600"
               >

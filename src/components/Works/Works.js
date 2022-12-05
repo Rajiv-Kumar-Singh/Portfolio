@@ -26,7 +26,7 @@ const Works = () => {
     return scrollPosition;
   }
 
-  if (useScrollPosition() > 500) {
+  if (useScrollPosition() > 100) {
     const heading = document.getElementById("works__heading");
     heading.classList.add("works__heading");
   }
@@ -40,7 +40,7 @@ const Works = () => {
       let i;
       for (i = 0; i < collapibleBar.length; i++) {
         collapibleBar[i].addEventListener("click", function () {
-          var content = this.nextElementSibling;
+          const content = this.nextElementSibling;
           if (content.style.display === "flex") {
             content.style.display = "none";
             this.classList.remove("project-card__header--expanded");

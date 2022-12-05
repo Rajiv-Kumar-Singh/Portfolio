@@ -87,6 +87,7 @@
     margin-top: 1em;
     max-width: 100%;
     display: none;
+    font-size: 1em;
     font-weight: lighter;
   }
 
@@ -110,12 +111,12 @@
       margin-top: 1em;
     }
   }
+
   &__header-arrow {
     position: absolute;
     top: 0;
     right: 0;
     margin-top: 14%;
-    // height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -160,6 +161,37 @@
     align-items: center;
     transform: rotateX(180deg);
     background-position: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    &__header {
+      padding: 0.5em 0;
+
+      h3 {
+        font-size: 1em;
+      }
+    }
+
+    &__header:after {
+      width: 1em;
+      height: 1em;
+    }
+
+    &__header--expanded:after {
+      width: 1em;
+      height: 1em;
+    }
+
+    &__description {
+      font-size: 0.87em;
+    }
+
+    &__description-content {
+      a {
+        font-size: 0.87em;
+        padding: 0.3em 0;
+      }
+    }
   }
 }
 

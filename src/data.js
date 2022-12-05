@@ -24,9 +24,9 @@ export const config = {
           buttonText: "CHECK OUT",
         },
         {
-          heading: "Dyeus",
+          heading: "TextUtils",
           description:
-            "I have created this project to minimzise this risk of fire hazards",
+            "This website is helpfull to perform various operations on text",
           animationDelay: "900",
           buttonText: "CHECK OUT",
         },

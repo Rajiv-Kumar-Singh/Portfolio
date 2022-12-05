@@ -91,9 +91,13 @@
 
     span:last-child {
       color: #ffffff;
+      margin-right: 0.5em;
     }
   }
 
+  &__alphabet--last {
+    margin-right: 0.15em;
+  }
   &__description {
     margin-left: 10%;
     font-weight: 300;
@@ -112,7 +116,6 @@
   &__dev-text {
     position: relative;
     display: inline-block;
-    margin-left: 0.15em;
   }
 
   &__buttons {
@@ -254,20 +257,51 @@
     font-weight: 300;
   }
 
-  @media screen and (max-width: 978px) {
-    &__dev-text {
-      margin-left: 0;
-    }
-  }
-
   @media screen and (max-width: 778px) {
+    &__container {
+      height: 70vh;
+      padding-top: 10%;
+    }
     &__gif {
       display: none;
     }
-    &__dev-text {
-      margin-left: 0.15em;
+
+    &__description {
+      width: 80%;
+      p {
+        min-width: 10em;
+      }
     }
   }
+
+  // @media screen and (max-width: 520px) {
+  //   &__container {
+  //     align-items: flex-start;
+  //     padding-top: 10%;
+  //   }
+  //   &__intro-title {
+  //     font-size: 0.875em;
+  //   }
+
+  //   &__animated-alphabet-box {
+  //     font-size: 2em;
+  //   }
+
+  //   &__dev-text {
+  //     margin-left: 0.15em;
+  //   }
+
+  //   &__description {
+  //     font-size: 0.875em;
+  //   }
+
+  //   &__buttons {
+  //     a {
+  //       padding: 0.3em 0.5em;
+  //       font-size: 0.87em;
+  //     }
+  //   }
+  // }
 }
 
 @keyframes socialAccounts {
