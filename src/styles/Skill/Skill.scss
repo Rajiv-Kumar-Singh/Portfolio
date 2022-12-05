@@ -72,25 +72,33 @@
       font-family: "RedWingLight";
       letter-spacing: 0.1em;
       font-size: 1em;
+      color: #00ffff;
     }
 
     ul {
       list-style-position: inside;
       margin-top: 0.2em;
+      margin-left: 1.5em;
       li {
         letter-spacing: 0.05em;
         color: #00ffff;
+        list-style-position: outside;
         span {
           color: #ffffff;
-          font-family: "RedWingLight";
+          font-family: "Lato", sans-serif;
+          font-weight: 300;
+          b {
+            font-weight: 400;
+          }
         }
       }
     }
   }
 
   &__cloud {
+    display: none;
     position: relative;
-    left: -8%;
+    left: -2%;
     .tagcloud {
       display: inline-block;
       top: 0;
@@ -108,10 +116,6 @@
 
     .tagcloud--item:hover {
       color: #ff6347;
-    }
-
-    .tagcloud:nth-child(2) {
-      display: none;
     }
   }
 }

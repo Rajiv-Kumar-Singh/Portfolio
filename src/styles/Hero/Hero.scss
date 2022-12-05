@@ -10,10 +10,10 @@
     height: 80vh;
     overflow: hidden;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding-bottom: 2em;
+    justify-content: space-between;
     align-items: center;
-    padding: 2% 5%;
+    font-family: "Lato", sans-serif;
     // border: 2px solid red;
 
     // &::before {
@@ -32,85 +32,171 @@
     // }
   }
 
-  &__background-text {
-    position: relative;
-    top: 0;
+  // &__background-text {
+  //   position: relative;
+  //   top: 0;
+  //   font-family: "RedWingBold";
+  //   font-size: 7vw;
+  //   color: #1f1f1f;
+  //   // color: #ffffff;
+  //   width: 100vw;
+  //   letter-spacing: 0.3em;
+  //   text-align: center;
+  //   // border: 2px solid red;
+
+  //   h1:nth-child(1) {
+  //     position: relative;
+  //     top: 0em;
+  //     z-index: 7;
+
+  //     span {
+  //       display: inline-block;
+  //     }
+  //   }
+  //   h1:nth-child(2) {
+  //     position: absolute;
+  //     top: 0em;
+  //     color: #000000;
+  //     margin: 0 auto;
+  //     width: 100%;
+  //     z-index: 4;
+  //     height: 1.01em;
+  //     -webkit-text-stroke: 1px #ffffff1a;
+  //     animation: textZoomAnimation 1s ease-in-out 1;
+  //   }
+  //   h1:nth-child(3) {
+  //     position: absolute;
+  //     top: 0em;
+  //     color: #000000;
+  //     margin: 0 auto;
+  //     width: 100%;
+  //     z-index: 3;
+  //     -webkit-text-stroke: 1px #ffffff1a;
+  //     // animation: textInOutAnimation 1.2s ease-in-out 1;
+  //   }
+  // }
+
+  &__alphabet {
+    display: inline-block;
+    color: #00ffff;
+  }
+
+  &__animated-alphabet-box {
     font-family: "RedWingBold";
-    font-size: 7vw;
-    color: #1f1f1f;
-    width: 100vw;
-    letter-spacing: 0.3em;
-    text-align: center;
-    // border: 2px solid red;
+    margin-left: 10%;
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
 
-    h1:nth-child(1) {
-      position: relative;
-      top: 0em;
-      z-index: 7;
+    span:last-child {
+      color: #ffffff;
+    }
+  }
 
+  &__description {
+    margin-left: 10%;
+    font-weight: 300;
+    width: 60%;
+    line-height: 1.5;
+    p {
+      min-width: 23em;
       span {
-        display: inline-block;
+        margin-bottom: 0.5em;
+        border-bottom: 0.07em solid #00ffff;
+        padding-bottom: 0.2em;
       }
-    }
-    h1:nth-child(2) {
-      position: absolute;
-      top: 0em;
-      color: #000000;
-      margin: 0 auto;
-      width: 100%;
-      z-index: 4;
-      height: 1.01em;
-      -webkit-text-stroke: 1px #ffffff1a;
-      animation: textZoomAnimation 1s ease-in-out 1;
-    }
-    h1:nth-child(3) {
-      position: absolute;
-      top: 0em;
-      color: #000000;
-      margin: 0 auto;
-      width: 100%;
-      z-index: 3;
-      -webkit-text-stroke: 1px #ffffff1a;
-      // animation: textInOutAnimation 1.2s ease-in-out 1;
     }
   }
 
-  &__text {
+  &__dev-text {
     position: relative;
-    top: 0;
-    text-align: right;
-    width: 100%;
-    color: #1f1f1f;
+    display: inline-block;
+    margin-left: 0.15em;
+  }
 
-    h2 {
+  &__buttons {
+    position: relative;
+    margin-top: 3em;
+    margin-left: 10%;
+    a {
       position: relative;
-      z-index: 8;
-      font-family: "RedWingBold";
-      font-size: 4vw;
-      margin-top: -0.4em;
-      letter-spacing: 0.1em;
-
-      span:nth-child(1) {
-        background: linear-gradient(
-          107deg,
-          #ff993393 30%,
-          #ffffff89,
-          #13880884 75.71%
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-      }
-
-      span:nth-child(1):hover {
-        animation: textColorAnimation 15s ease-in-out infinite;
-      }
-
-      span:nth-child(2) {
-        color: #00ffff;
-      }
+      display: inline-block;
+      text-decoration: none;
+      font-size: 1em;
+      padding: 0.5em 1em;
     }
   }
+
+  &__know-btn {
+    color: #000000;
+    margin-right: 1.5em;
+    background: #00ffff;
+    border: 0.1em solid #00ffff;
+
+    &:hover {
+      background: transparent;
+      border: 0.1em solid #ff6347;
+      color: #ffffff;
+    }
+  }
+
+  &__contact-btn {
+    color: #ffffff;
+    border: 0.1em solid #00ffff;
+
+    &:hover {
+      background: #ff6347;
+      border: 0.1em solid #ff6347;
+    }
+  }
+
+  &__gif {
+    position: relative;
+    margin-right: 20%;
+    // border: 2px solid red;
+    img {
+      width: 150%;
+      height: auto;
+      min-width: 14em;
+    }
+  }
+  // &__text {
+  //   position: relative;
+  //   top: 0;
+  //   text-align: right;
+  //   width: 100%;
+  //   color: #1f1f1f;
+
+  //   h2 {
+  //     position: relative;
+  //     z-index: 8;
+  //     font-family: "RedWingBold";
+  //     font-size: 4vw;
+  //     margin-top: -0.4em;
+  //     letter-spacing: 0.1em;
+
+  //     span:nth-child(1) {
+  //       background: linear-gradient(
+  //         107deg,
+  //         #ff993393 30%,
+  //         #ffffff89,
+  //         #13880884 75.71%
+  //       );
+  //       -webkit-background-clip: text;
+  //       -webkit-text-fill-color: transparent;
+  //       background-clip: text;
+  //     }
+
+  //     span:nth-child(1):hover {
+  //       animation: textColorAnimation 15s ease-in-out infinite;
+  //     }
+
+  //     span:nth-child(2) {
+  //       color: #00ffff;
+  //     }
+  //   }
+  // }
 
   &__sider-bar-container {
     position: absolute;
@@ -134,16 +220,53 @@
     justify-content: center;
     align-items: center;
     font-size: 1em;
-    // overflow: hidden;
   }
 
   &__side-bar:hover {
-    // width: 3em;
     background-color: transparent;
     border-right: 0.2em solid #00ffff;
     color: #00ffff;
     animation: socialAccounts 0.5s ease-in-out 1;
     animation-fill-mode: forwards;
+  }
+
+  // Creating New Hero section
+  &__intro-box {
+    position: relative;
+    color: #ffffff;
+  }
+
+  &__intro-line {
+    position: relative;
+    width: 9.2%;
+    height: 0.05em;
+    margin-right: 0.5em;
+    display: inline-block;
+    background: #00ffff;
+  }
+
+  &__intro-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 300;
+  }
+
+  @media screen and (max-width: 978px) {
+    &__dev-text {
+      margin-left: 0;
+    }
+  }
+
+  @media screen and (max-width: 778px) {
+    &__gif {
+      display: none;
+    }
+    &__dev-text {
+      margin-left: 0.15em;
+    }
   }
 }
 
@@ -195,7 +318,7 @@
 }
 
 .alphabet-animated {
-  color: #00ffff;
+  color: #ff6347;
   animation: alphabetAnimation 0.7s ease-in-out 1;
 }
 
