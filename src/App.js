@@ -14,6 +14,7 @@ import Experience from "./components/About/RouteComponents/Experience";
 import Internships from "./components/About/RouteComponents/Internships";
 import Graduation from "./components/About/RouteComponents/Graduation";
 import Skill from "./components/Skill/Skill";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
             path="/"
             element={
               <>
-                <Header /> <Hero /> <Works /> <About /> <Skill />
+                <Header /> <Hero /> <Works /> <About /> <Skill /> <Contact />
               </>
             }
           />

@@ -79,21 +79,21 @@ const About = () => {
               </span>
               <span
                 data-aos="fade-down"
-                data-aos-delay="400"
+                data-aos-delay="600"
                 data-aos-offset="200"
               >
                 U
               </span>
               <span
                 data-aos="fade-down"
-                data-aos-delay="600"
+                data-aos-delay="800"
                 data-aos-offset="200"
               >
                 T
               </span>
               <span
                 data-aos="fade-down"
-                data-aos-delay="800"
+                data-aos-delay="1000"
                 data-aos-offset="200"
               >
                 .

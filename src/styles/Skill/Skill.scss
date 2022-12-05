@@ -1,6 +1,7 @@
 .skill {
   position: relative;
   top: 0;
+
   &__main-container {
     position: relative;
     top: 0;
@@ -26,6 +27,17 @@
     text-transform: uppercase;
     font-size: 2em;
     color: #ffffff;
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      content: "";
+      width: 10%;
+      height: 0.05em;
+      background-color: #00ffff;
+    }
+
     h1 {
       span {
         position: relative;
