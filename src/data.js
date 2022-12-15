@@ -73,7 +73,7 @@ export const config = {
             'Created an IoT project which is very helpful for minimizing fire hazards',
           keyPointFour:
             'Built an website which shows real-time data of various sensors like MQ2 Gas Senor and DHT11 Temperature and Humidity sensor',
-          offsetValue: '-200',
+          offsetValue: '-1000',
         },
         {
           companyName: 'Clear Exam',
@@ -85,7 +85,7 @@ export const config = {
           keyPointTwo: '',
           keyPointThree: '',
           keyPointFour: '',
-          offsetValue: '-500',
+          offsetValue: '-1000',
         },
       ],
     },
