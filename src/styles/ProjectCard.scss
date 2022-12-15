@@ -62,34 +62,34 @@
     top: 0;
   }
 
-  &__header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    padding: 1em 0;
-    position: relative;
-    z-index: 2;
+  // &__header {
+  //   width: 100%;
+  //   display: flex;
+  //   justify-content: space-between;
+  //   align-items: center;
+  //   cursor: pointer;
+  //   padding: 1em 0;
+  //   position: relative;
+  //   z-index: 2;
 
-    h3 {
-      display: inline-block;
-      font-size: 1.33em;
-      padding-right: 1em;
-    }
-  }
+  //   h3 {
+  //     display: inline-block;
+  //     font-size: 1.33em;
+  //     padding-right: 1em;
+  //   }
+  // }
 
-  &__header-animation {
-    animation: cardAnimation 0.7s ease-in-out 1;
-  }
+  // &__header-animation {
+  //   animation: cardAnimation 0.7s ease-in-out 1;
+  // }
 
-  &__description {
-    margin-top: 1em;
-    max-width: 100%;
-    display: none;
-    font-size: 1em;
-    font-weight: lighter;
-  }
+  // &__description {
+  //   margin-top: 1em;
+  //   max-width: 100%;
+  //   display: none;
+  //   font-size: 1em;
+  //   font-weight: lighter;
+  // }
 
   &__description-content {
     display: flex;
@@ -97,6 +97,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
+    line-height: 1.5;
 
     a {
       text-transform: uppercase;
@@ -112,56 +113,56 @@
     }
   }
 
-  &__header-arrow {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-top: 14%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    img {
-      width: 1em;
-      height: auto;
-      cursor: pointer;
-    }
-  }
+  // &__header-arrow {
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+  //   margin-top: 14%;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   z-index: 1;
+  //   img {
+  //     width: 1em;
+  //     height: auto;
+  //     cursor: pointer;
+  //   }
+  // }
 
-  &__header-arrow--rotate {
-    transform: rotateX(180deg);
-  }
+  // &__header-arrow--rotate {
+  //   transform: rotateX(180deg);
+  // }
 
-  &__header:after {
-    content: "";
-    background-image: url("../assets/images/icons/angle-down.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 2em;
-    height: 2em;
-    float: right;
-    margin-right: 1em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-position: center;
-  }
+  // &__header:after {
+  //   content: '';
+  //   background-image: url('../assets/images/icons/angle-down.svg');
+  //   background-size: contain;
+  //   background-repeat: no-repeat;
+  //   width: 2em;
+  //   height: 2em;
+  //   float: right;
+  //   margin-right: 1em;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   background-position: center;
+  // }
 
-  &__header--expanded:after {
-    content: "";
-    background-image: url("../assets/images/icons/angle-down.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 2em;
-    height: 2em;
-    float: right;
-    margin-right: 1em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: rotateX(180deg);
-    background-position: center;
-  }
+  // &__header--expanded:after {
+  //   content: '';
+  //   background-image: url('../assets/images/icons/angle-down.svg');
+  //   background-size: contain;
+  //   background-repeat: no-repeat;
+  //   width: 2em;
+  //   height: 2em;
+  //   float: right;
+  //   margin-right: 1em;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   transform: rotateX(180deg);
+  //   background-position: center;
+  // }
 
   @media screen and (max-width: 768px) {
     &__header {
@@ -204,5 +205,58 @@
   }
   100% {
     padding: 0;
+  }
+}
+
+// Styling Collapsible bars
+.Collapsible {
+  font-family: 'RedWingBold';
+
+  &__trigger {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 1em 0;
+    position: relative;
+    z-index: 2;
+    font-size: 1.33em;
+    padding-right: 1em;
+  }
+
+  .is-closed:after {
+    content: '';
+    background-image: url('../assets/images/icons/angle-down.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1.5em;
+    height: 1.5em;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+  }
+
+  .is-open:after {
+    content: '';
+    background-image: url('../assets/images/icons/angle-down.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1.5em;
+    height: 1.5em;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateX(180deg);
+    background-position: center;
+  }
+
+  &__contentInner {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
   }
 }
