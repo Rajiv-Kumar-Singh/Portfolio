@@ -1,11 +1,11 @@
-import React, { useEffect } from "react";
+import React, { useEffect } from 'react';
 
-import "../../styles/Works/Works.scss";
+import '../../styles/Works/Works.scss';
 
-import data from "../../data";
+import data from '../../data';
 
 // Importing child component
-import ProjectCard from "../ProjectCard";
+import ProjectCard from '../ProjectCard';
 
 const Works = () => {
   // function useScrollPosition() {
@@ -35,23 +35,23 @@ const Works = () => {
   useEffect(() => {
     return () => {
       const collapibleBar = document.getElementsByClassName(
-        "project-card__header"
+        'project-card__header'
       );
       let i;
       for (i = 0; i < collapibleBar.length; i++) {
-        collapibleBar[i].addEventListener("click", function () {
+        collapibleBar[i].addEventListener('click', function () {
           const content = this.nextElementSibling;
-          if (content.style.display === "flex") {
-            content.style.display = "none";
-            this.classList.remove("project-card__header--expanded");
+          if (content.style.display === 'flex') {
+            content.style.display = 'none';
+            this.classList.remove('project-card__header--expanded');
           } else {
-            content.style.display = "flex";
-            this.classList.add("project-card__header--expanded");
+            content.style.display = 'flex';
+            this.classList.add('project-card__header--expanded');
           }
         });
       }
     };
-  }, []);
+  });
 
   return (
     <>

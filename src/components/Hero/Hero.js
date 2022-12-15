@@ -1,27 +1,27 @@
-import React, { useEffect } from "react";
+import React, { useEffect } from 'react';
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faLinkedin,
   faGithub,
   faYoutube,
-} from "@fortawesome/free-brands-svg-icons";
+} from '@fortawesome/free-brands-svg-icons';
 
-import "../../styles/Hero/Hero.scss";
+import '../../styles/Hero/Hero.scss';
 
-import Coding from "../../assets/videos/coding.gif";
+import Coding from '../../assets/videos/coding.gif';
 
 const Hero = () => {
   useEffect(() => {
     return () => {
-      const alphbets = document.getElementsByClassName("hero__alphabet");
+      const alphbets = document.getElementsByClassName('hero__alphabet');
       for (let i = 0; i <= alphbets.length; i++) {
-        alphbets[i]?.addEventListener("animationend", function () {
-          alphbets[i].classList.remove("alphabet-animated");
+        alphbets[i]?.addEventListener('animationend', function () {
+          alphbets[i].classList.remove('alphabet-animated');
         });
 
-        alphbets[i]?.addEventListener("mouseover", function () {
-          alphbets[i].classList.add("alphabet-animated");
+        alphbets[i]?.addEventListener('mouseover', function () {
+          alphbets[i].classList.add('alphabet-animated');
         });
       }
     };
@@ -107,7 +107,7 @@ const Hero = () => {
               data-aos-delay="1800"
             >
               <p>
-                I'm a passionate and responsible{" "}
+                I'm a passionate and responsible{' '}
                 <span>front-end developer</span>, with more than 6 months of
                 experience. Skilled in developing highly responsive websites and
                 mobile apps with elegant and efficient code.
