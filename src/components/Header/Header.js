@@ -1,5 +1,12 @@
 import React, { useRef, useEffect } from 'react';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faLinkedin,
+  faGithub,
+  faYoutube,
+} from '@fortawesome/free-brands-svg-icons';
+
 import '../../styles/Header/Header.scss';
 const Header = () => {
   const navLinkAbout = useRef();
@@ -126,6 +133,11 @@ const Header = () => {
                   <a href="#contact">Contact me</a>
                 </li>
                 <div className="header__route-bg"></div>
+              </div>
+              <div className="header__social">
+                <FontAwesomeIcon icon={faLinkedin} size="2x" />
+                <FontAwesomeIcon icon={faGithub} size="2x" />
+                <FontAwesomeIcon icon={faYoutube} size="2x" />
               </div>
             </ul>
           </div>

@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
+import React, { useEffect } from 'react';
 
 // Importing TagCloud for  3D Rotating Text Sphere
-import TagCloud from "TagCloud";
+import TagCloud from 'TagCloud';
 
-import "../../styles/Skill/Skill.scss";
+import '../../styles/Skill/Skill.scss';
 
 const Skill = () => {
   // function useScrollPosition() {
@@ -33,27 +33,27 @@ const Skill = () => {
 
   useEffect(() => {
     return () => {
-      const container = ".tagcloud";
+      const container = '.tagcloud';
       const texts = [
-        "HTML",
-        "CSS",
-        "SASS",
-        "JavaScript",
-        "React",
-        "Vue",
-        "Nuxt",
-        "NodeJS",
-        "Shopify",
-        "Jquery",
-        "ES6",
-        "GIT",
-        "GITHUB",
+        'HTML',
+        'CSS',
+        'SASS',
+        'JavaScript',
+        'React',
+        'Vue',
+        'Nuxt',
+        'NodeJS',
+        'Shopify',
+        'Jquery',
+        'ES6',
+        'GIT',
+        'GITHUB',
       ];
 
       function radiusValue() {
         var radii;
         if (window.screen.width <= 778) {
-          radii = 200;
+          radii = 180;
         } else {
           radii = 250;
         }
@@ -62,8 +62,8 @@ const Skill = () => {
 
       const options = {
         radius: radiusValue(),
-        maxSpeed: "normal",
-        initSpeed: "normal",
+        maxSpeed: 'normal',
+        initSpeed: 'normal',
         keep: true,
       };
 

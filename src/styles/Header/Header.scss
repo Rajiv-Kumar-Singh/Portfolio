@@ -71,6 +71,10 @@
     animation: linkBgAnimation 0.5s ease-in-out 1;
   }
 
+  &__social {
+    display: none;
+  }
+
   // Hamburger icon styling
   &__hamburger-icon {
     position: absolute;

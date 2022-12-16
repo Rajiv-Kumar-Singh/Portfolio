@@ -259,4 +259,25 @@
     font-weight: 300;
     font-size: 1em;
   }
+
+  @media screen and (max-width: 768px) {
+    &__trigger {
+      padding: 0.5em 0;
+      font-size: 1em;
+    }
+
+    &__contentInner {
+      font-size: 0.875em;
+    }
+
+    .is-closed:after {
+      width: 1em;
+      height: 1em;
+    }
+
+    .is-open:after {
+      width: 1em;
+      height: 1em;
+    }
+  }
 }
