@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="footer">
         <div className="footer__container">
           <p>
-            Made with <FontAwesomeIcon icon={faHeart} size="0.3x" /> by Rajiv
+            Made with <FontAwesomeIcon icon={faHeart} size="sm" /> by Rajiv
           </p>
         </div>
       </div>

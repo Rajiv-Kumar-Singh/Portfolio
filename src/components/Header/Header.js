@@ -1,6 +1,6 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect } from 'react';
 
-import "../../styles/Header/Header.scss";
+import '../../styles/Header/Header.scss';
 const Header = () => {
   const navLinkAbout = useRef();
   const navLinkWork = useRef();
@@ -21,16 +21,38 @@ const Header = () => {
   // }
 
   useEffect(() => {
-    const route = document.getElementsByClassName("header__route");
+    const route = document.getElementsByClassName('header__route');
     for (let i = 0; i <= route.length; i++) {
-      route[i]?.addEventListener("mouseover", function () {
-        this.nextSibling.classList.add("header__route-bg-animation");
+      route[i]?.addEventListener('mouseover', function () {
+        this.nextSibling.classList.add('header__route-bg-animation');
       });
-      route[i]?.addEventListener("mouseout", function () {
-        this.nextSibling.classList.remove("header__route-bg-animation");
+      route[i]?.addEventListener('mouseout', function () {
+        this.nextSibling.classList.remove('header__route-bg-animation');
       });
     }
   });
+
+  function showHideNavbar() {
+    const navLinksDisplay = document.getElementById('header__nav-links');
+    const iconMiddleLine = document.getElementById(
+      'header__hamburger-middle-line'
+    );
+    const iconTopLine = document.getElementById('header__hamburger-top-line');
+    const iconBottomLine = document.getElementById(
+      'header__hamburger-bottom-line'
+    );
+    if (navLinksDisplay.style.display === 'flex') {
+      navLinksDisplay.style.display = 'none';
+      iconMiddleLine.style.display = 'inline-block';
+      iconTopLine.classList.remove('header__icon-line-animate');
+      iconBottomLine.classList.remove('header__icon-bottom-line-animate');
+    } else {
+      navLinksDisplay.style.display = 'flex';
+      iconMiddleLine.style.display = 'none';
+      iconTopLine.classList.add('header__icon-line-animate');
+      iconBottomLine.classList.add('header__icon-bottom-line-animate');
+    }
+  }
 
   return (
     <>
@@ -65,7 +87,12 @@ const Header = () => {
               o
             </span>
           </div>
-          <div className="header__nav-links">
+          <div className="header__hamburger-icon" onClick={showHideNavbar}>
+            <span id="header__hamburger-top-line"></span>
+            <span id="header__hamburger-middle-line"></span>
+            <span id="header__hamburger-bottom-line"></span>
+          </div>
+          <div className="header__nav-links" id="header__nav-links">
             <ul>
               <div className="header__nav-links-container">
                 <li
