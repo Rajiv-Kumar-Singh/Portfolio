@@ -3,6 +3,10 @@ import React from 'react';
 
 import '../../styles/Contact/Contact.scss';
 const Contact = () => {
+    function handleClick(event) {
+        event.preventDefault();
+    }
+
     return (
         <>
             <div className="contact">
@@ -101,7 +105,7 @@ const Contact = () => {
                                         placeholder="Type your messsage"
                                     ></textarea>
                                 </div>
-                                <button type='submit' className="contact__send-btn">
+                                <button type='submit' className="contact__send-btn" onClick={handleClick}>
                                     Send
                                 </button>
                             </form>
