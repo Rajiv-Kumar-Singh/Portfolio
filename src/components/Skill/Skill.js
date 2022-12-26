@@ -32,41 +32,41 @@ const Skill = () => {
   // Animation settings for Text Cloud
 
   useEffect(() => {
-    return () => {
-      const container = '.tagcloud';
-      const texts = [
-        'HTML',
-        'CSS',
-        'SASS',
-        'JavaScript',
-        'React',
-        'Vue',
-        'Nuxt',
-        'NodeJS',
-        'Shopify',
-        'Jquery',
-        'ES6',
-        'GIT',
-        'GITHUB',
-      ];
+    const container = '.tagcloud';
+    const texts = [
+      'HTML',
+      'CSS',
+      'SASS',
+      'JavaScript',
+      'React',
+      'Vue',
+      'Nuxt',
+      'NodeJS',
+      'Shopify',
+      'Jquery',
+      'ES6',
+      'GIT',
+      'GITHUB',
+    ];
 
-      var radii;
-      function radiusValue() {
-        if (window.screen.width <= 778) {
-          radii = 180;
-        } else {
-          radii = 250;
-        }
-        return radii;
+    let radii;
+    function radiusValue() {
+      if (window.screen.width <= 778) {
+        radii = 180;
+      } else {
+        radii = 250;
       }
+      return radii;
+    }
 
-      const options = {
-        radius: radiusValue(),
-        maxSpeed: 'normal',
-        initSpeed: 'normal',
-        keep: true,
-      };
+    const options = {
+      radius: radiusValue(),
+      maxSpeed: 'normal',
+      initSpeed: 'normal',
+      keep: true,
+    };
 
+    return () => {
       TagCloud(container, texts, options);
     };
   }, []);
