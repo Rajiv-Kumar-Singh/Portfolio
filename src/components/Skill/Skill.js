@@ -50,8 +50,8 @@ const Skill = () => {
         'GITHUB',
       ];
 
+      var radii;
       function radiusValue() {
-        var radii;
         if (window.screen.width <= 778) {
           radii = 180;
         } else {

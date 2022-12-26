@@ -13,18 +13,18 @@ import Coding from '../../assets/videos/coding.gif';
 
 const Hero = () => {
   useEffect(() => {
-    return () => {
-      const alphbets = document.getElementsByClassName('hero__alphabet');
-      for (let i = 0; i <= alphbets.length; i++) {
-        alphbets[i]?.addEventListener('animationend', function () {
-          alphbets[i].classList.remove('alphabet-animated');
-        });
+    const alphbets = document.getElementsByClassName('hero__alphabet');
+    for (let i = 0; i <= alphbets.length; i++) {
+      alphbets[i]?.addEventListener('animationend', function () {
+        alphbets[i].classList.remove('alphabet-animated');
+      });
 
-        alphbets[i]?.addEventListener('mouseover', function () {
-          alphbets[i].classList.add('alphabet-animated');
-        });
-      }
-    };
+      alphbets[i]?.addEventListener('mouseover', function () {
+        alphbets[i].classList.add('alphabet-animated');
+      });
+    }
+    // return () => {
+    // };
   }, []);
 
   return (
