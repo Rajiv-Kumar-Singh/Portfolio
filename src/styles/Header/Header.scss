@@ -25,6 +25,8 @@
     font-family: 'RedWingLight';
     ul {
       display: flex;
+      justify-content: center;
+      align-items: center;
       white-space: nowrap;
       li {
         position: relative;
@@ -170,6 +172,50 @@
 
     #header__nav-links {
       display: none;
+    }
+
+    &__social {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      bottom: 1em;
+      p {
+        a {
+          svg {
+            font-size: 1.3em;
+            color: #ffffff;
+          }
+        }
+      }
+
+      p:not(:last-child) {
+        margin-right: 1em;
+      }
+    }
+
+    &__linkedin {
+      a {
+        svg:hover {
+          color: #0072b1;
+        }
+      }
+    }
+
+    &__github {
+      a {
+        svg:hover {
+          color: #00ffff;
+        }
+      }
+    }
+
+    &__youtube {
+      a {
+        svg:hover {
+          color: #ff0000;
+        }
+      }
     }
   }
 }
