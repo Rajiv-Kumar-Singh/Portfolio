@@ -3,9 +3,6 @@ import React from 'react';
 
 import '../../styles/Contact/Contact.scss';
 const Contact = () => {
-    function handleClick(event) {
-        event.preventDefault();
-    }
 
     return (
         <>
@@ -74,8 +71,15 @@ const Contact = () => {
 
                     <div className="contact__details">
                         <div className="contact__form">
-                            <form name="contact" method="POST" netlify>
-                                <div className="contact__form-group">
+                            {/* <!-- A little help for the Netlify bots if you're not using a SSG --> */}
+                            <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+                                <input type="text" name="name" />
+                                <input type="email" name="email" />
+                                <textarea name="message"></textarea>
+                            </form>
+                            <form name="contact" method="post" netlify>
+                                <input type="hidden" name="form-name" value="contact" />
+                                <p className="contact__form-group">
                                     <label htmlFor="name">Name: </label>
                                     <input
                                         type="text"
@@ -84,8 +88,8 @@ const Contact = () => {
                                         placeholder="Enter name"
                                         required
                                     />
-                                </div>
-                                <div className="contact__form-group">
+                                </p>
+                                <p className="contact__form-group">
                                     <label htmlFor="email">Email: </label>
                                     <input
                                         type="email"
@@ -94,8 +98,8 @@ const Contact = () => {
                                         placeholder="Enter email"
                                         required
                                     />
-                                </div>
-                                <div className="contact__form-group">
+                                </p>
+                                <p className="contact__form-group">
                                     <label htmlFor="message">Concern: </label>
                                     <textarea
                                         name="message"
@@ -104,8 +108,8 @@ const Contact = () => {
                                         rows="5"
                                         placeholder="Type your messsage"
                                     ></textarea>
-                                </div>
-                                <button type='submit' className="contact__send-btn" onClick={handleClick}>
+                                </p>
+                                <button type='submit' className="contact__send-btn">
                                     Send
                                 </button>
                             </form>
