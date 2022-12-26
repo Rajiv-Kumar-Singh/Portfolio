@@ -77,7 +77,7 @@ const Contact = () => {
                                 <input type="email" name="email" />
                                 <textarea name="message"></textarea>
                             </form>
-                            <form name="contact" method="post" netlify>
+                            <form name="contact" method="post">
                                 <input type="hidden" name="form-name" value="contact" />
                                 <p className="contact__form-group">
                                     <label htmlFor="name">Name: </label>
