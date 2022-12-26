@@ -70,7 +70,7 @@ const Contact = () => {
 
                     <div className="contact__details">
                         <div className="contact__form">
-                            <form name="contact" netlify>
+                            <form name="contact" method="POST" netlify>
                                 <div className="contact__form-group">
                                     <label htmlFor="name">Name: </label>
                                     <input
