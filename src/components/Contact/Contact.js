@@ -71,7 +71,7 @@ const Contact = () => {
 
                     <div className="contact__details">
                         <div className="contact__form">
-                            <form name="contact" method="post">
+                            <form name="contact" method="post" netlify>
                                 <input type="hidden" name="form-name" value="contact" />
                                 <p className="contact__form-group">
                                     <label htmlFor="name">Name: </label>
