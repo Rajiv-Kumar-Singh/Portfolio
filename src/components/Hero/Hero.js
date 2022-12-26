@@ -125,7 +125,7 @@ const Hero = () => {
               </a>
               <a
                 className="hero__contact-btn"
-                href="#about"
+                href="#contact"
                 data-aos="fade-down"
                 data-aos-delay="2000"
               >
