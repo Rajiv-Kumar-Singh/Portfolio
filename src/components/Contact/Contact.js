@@ -120,9 +120,9 @@ const Contact = () => {
                         <h3 className="contact__info-title">Let's Connect</h3>
                         <div className="contact__info-details">
                             <ul>
-                                <li> <FontAwesomeIcon icon={faLocationDot} size="2x" /><p>Address:&nbsp;&nbsp;<span>Shahpur, Gorakhpur, Uttar Pradesh 273014</span></p></li>
-                                <li> <FontAwesomeIcon icon={faPhone} size="2x" /><p>Phone:&nbsp;&nbsp;<span>(+91) 123456789</span></p></li>
-                                <li> <FontAwesomeIcon icon={faEnvelope} size="2x" /><p>Email:&nbsp;&nbsp;<span>rajivkrsingh07@gmail.com</span></p></li>
+                                <li> <FontAwesomeIcon icon={faLocationDot} size="2x" /><p><span>Address:&nbsp;&nbsp;</span>Shahpur, Gorakhpur, Uttar Pradesh 273014</p></li>
+                                <li> <FontAwesomeIcon icon={faPhone} size="2x" /><p><span>Phone:</span>&nbsp;&nbsp;(+91) 123456789</p></li>
+                                <li> <FontAwesomeIcon icon={faEnvelope} size="2x" /><p><span>Email:&nbsp;&nbsp;</span>rajivkrsingh07@gmail.com</p></li>
                                 <li> <FontAwesomeIcon icon={faSquareCheck} size="2x" /><span>FREELANCE</span></li>
                             </ul>
                         </div>

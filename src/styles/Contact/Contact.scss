@@ -104,7 +104,9 @@
     margin-top: 1em;
 
     &:hover {
-      color: #ff6347;
+      color: #00ffff;
+      background: transparent;
+      border: 0.07em solid #00ffff;
     }
   }
 
@@ -145,6 +147,11 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
+        p {
+          span {
+            font-weight: 400;
+          }
+        }
         svg {
           color: #00ffff;
           font-size: 1.6em;
@@ -165,6 +172,7 @@
     align-items: center;
     p {
       margin-right: 1em;
+
       a {
         svg {
           color: #ffffff;
