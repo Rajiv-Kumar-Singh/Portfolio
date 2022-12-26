@@ -33,6 +33,7 @@ const Skill = () => {
 
   useEffect(() => {
     const container = '.tagcloud';
+    let radii;
     const texts = [
       'HTML',
       'CSS',
@@ -49,21 +50,18 @@ const Skill = () => {
       'GITHUB',
     ];
 
-    // let radii;
-    // function radiusValue() {
-    //   if (window.screen.width <= 778) {
-    //     radii = 180;
-    //     console.log(radii);
-    //   } else {
-    //     radii = 250;
-    //     console.log(radii);
-    //   }
-    //   console.log(radii);
-    //   return radii;
-    // }
+
+    function radiusValue() {
+      if (window.screen.width <= 778) {
+        radii = 180;
+      } else {
+        radii = 250;
+      }
+      return radii;
+    }
 
     const options = {
-      radius: 250,
+      radius: radiusValue(),
       maxSpeed: 'normal',
       initSpeed: 'normal',
       keep: true,
@@ -71,6 +69,7 @@ const Skill = () => {
 
     return () => {
       TagCloud(container, texts, options);
+
     };
   }, []);
 

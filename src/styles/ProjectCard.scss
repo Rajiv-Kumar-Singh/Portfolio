@@ -6,8 +6,7 @@
   margin-bottom: 4em;
   margin: 1em;
   height: fit-content;
-  // background-color: #1f1f1f;
-  background: linear-gradient(167deg, rgb(0, 0, 0) 21%, rgb(25 25 26) 100%);
+  background: linear-gradient(167deg, #000 21%, #363638);
 
   &:nth-child(1) {
     .project-card__description-content {
