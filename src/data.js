@@ -33,7 +33,7 @@ export const config = {
           buttonText: 'CHECK OUT',
         },
         {
-          heading: 'Developing',
+          heading: 'Under Construction',
           description: '</>',
           animationDelay: '1100',
           buttonText: '',
