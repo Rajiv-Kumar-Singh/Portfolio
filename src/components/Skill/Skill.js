@@ -209,8 +209,6 @@ const Skill = () => {
             </div>
             <div className="skill__cloud">
               <div
-                data-aos="zoom-in-up"
-                data-aos-once="true"
                 className="tagcloud"
               ></div>
             </div>
