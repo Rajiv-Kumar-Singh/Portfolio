@@ -68,7 +68,11 @@ const Skill = () => {
         keep: true,
       };
 
-      TagCloud(container, texts, options);
+      function callTagCloud() {
+        TagCloud(container, texts, options);
+      }
+
+      callTagCloud();
 
     };
   }, []);
