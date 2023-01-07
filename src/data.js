@@ -16,7 +16,7 @@ export const config = {
           description:
             'Building blog website for posting content related to frontend development',
           animationDelay: '500',
-          buttonLink: 'https://codemmit.netlify.app/',
+          buttonLink: 'https://codemmit.tech',
           buttonText: 'CHECK OUT',
         },
         {

@@ -208,11 +208,11 @@ const Skill = () => {
               </div>
             </div>
             <div className="skill__cloud">
-              <span
+              <div
                 data-aos="zoom-in-up"
                 data-aos-once="true"
                 className="tagcloud"
-              ></span>
+              ></div>
             </div>
           </div>
         </div>
