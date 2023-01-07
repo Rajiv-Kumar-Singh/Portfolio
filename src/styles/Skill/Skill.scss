@@ -21,7 +21,7 @@
     position: relative;
     top: 0;
     text-align: left;
-    font-family: "RedWingBold";
+    font-family: 'RedWingBold';
     font-weight: bolder;
     letter-spacing: 0.2em;
     text-transform: uppercase;
@@ -32,7 +32,7 @@
       position: absolute;
       bottom: 0;
       left: 0;
-      content: "";
+      content: '';
       width: 10%;
       height: 0.05em;
       background-color: #00ffff;
@@ -75,7 +75,7 @@
   &__skill-tags {
     letter-spacing: 0.05em;
     span {
-      font-family: "RedWingLight";
+      font-family: 'RedWingLight';
       display: inline-block;
       padding: 0.2em 1em;
       border-radius: 0.25em;
@@ -87,7 +87,7 @@
   &__details {
     margin-top: 1.5em;
     h4 {
-      font-family: "RedWingLight";
+      font-family: 'RedWingLight';
       letter-spacing: 0.1em;
       font-size: 1em;
       color: #00ffff;
@@ -103,7 +103,7 @@
         list-style-position: outside;
         span {
           color: #ffffff;
-          font-family: "Lato", sans-serif;
+          font-family: 'Lato', sans-serif;
           font-weight: 300;
           b {
             font-weight: 400;
@@ -114,18 +114,24 @@
   }
 
   &__cloud {
-    // display: none;
     position: relative;
     left: -2%;
+
     .tagcloud {
-      display: inline-block;
+      position: relative;
       top: 0;
       left: 0;
+      display: inline-block;
       font-weight: 300;
       letter-spacing: 0.0625em;
-      font-family: "RedWingBold";
+      font-family: 'RedWingBold';
       font-size: 1.3em;
+
+      .tagcloud:nth-child(1) {
+        display: none;
+      }
     }
+
     /* Change color of each text in sphere on hover   */
     .tagcloud--item {
       color: #00ffffff;

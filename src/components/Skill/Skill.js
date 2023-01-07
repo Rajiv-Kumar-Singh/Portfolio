@@ -32,50 +32,44 @@ const Skill = () => {
   // Animation settings for Text Cloud
 
   useEffect(() => {
-    return () => {
-      const container = '.tagcloud';
-      let radii;
-      const texts = [
-        'HTML',
-        'CSS',
-        'SASS',
-        'JavaScript',
-        'React',
-        'Vue',
-        'Nuxt',
-        'NodeJS',
-        'Shopify',
-        'Jquery',
-        'ES6',
-        'GIT',
-        'GITHUB',
-      ];
+
+    const container = '.tagcloud';
+    let radii;
+    const texts = [
+      'HTML',
+      'CSS',
+      'SASS',
+      'JavaScript',
+      'React',
+      'Vue',
+      'Nuxt',
+      'NodeJS',
+      'Shopify',
+      'Jquery',
+      'ES6',
+      'GIT',
+      'GITHUB',
+    ];
 
 
-      function radiusValue() {
-        if (window.screen.width <= 778) {
-          radii = 160;
-        } else {
-          radii = 250;
-        }
-        return radii;
+    function radiusValue() {
+      if (window.screen.width <= 778) {
+        radii = 160;
+      } else {
+        radii = 250;
       }
+      return radii;
+    }
 
-      const options = {
-        radius: radiusValue(),
-        maxSpeed: 'normal',
-        initSpeed: 'normal',
-        keep: true,
-      };
-
-      function callTagCloud() {
-        TagCloud(container, texts, options);
-      }
-
-      callTagCloud();
-
+    const options = {
+      radius: radiusValue(),
+      maxSpeed: 'normal',
+      initSpeed: 'normal',
+      keep: true,
     };
-  }, []);
+
+    TagCloud(container, texts, options);
+  });
 
   return (
     <>
@@ -212,9 +206,7 @@ const Skill = () => {
               </div>
             </div>
             <div className="skill__cloud">
-              <div
-                className="tagcloud"
-              ></div>
+              <div className="tagcloud"></div>
             </div>
           </div>
         </div>
