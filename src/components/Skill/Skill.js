@@ -69,7 +69,7 @@ const Skill = () => {
     };
 
     TagCloud(container, texts, options);
-  });
+  }, []);
 
   return (
     <>
