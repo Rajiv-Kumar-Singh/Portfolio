@@ -20,22 +20,29 @@ export const config = {
           buttonText: 'CHECK OUT',
         },
         {
-          heading: 'DigiShop',
-          description: 'React Native shopping app.',
+          heading: 'NewsX',
+          description: 'Built website using React.js, Bootstrap and NewsAPI, which shows latest news. Used NewsAPI for fecthing latest news.',
           animationDelay: '700',
+          buttonLink: 'https://github.com/Rajiv-Kumar-Singh/NewsX',
           buttonText: 'CHECK OUT',
         },
         {
-          heading: 'TextUtils',
-          description:
-            'Simple React.js website helpful to perform various operations on text',
+          heading: 'DigiShop',
+          description: 'React Native shopping app.',
           animationDelay: '900',
           buttonText: 'CHECK OUT',
         },
+        // {
+        //   heading: 'TextUtils',
+        //   description:
+        //     'Simple React.js website helpful to perform various operations on text',
+        //   animationDelay: '900',
+        //   buttonText: 'CHECK OUT',
+        // },
         {
           heading: 'Under Construction',
           description: '</>',
-          animationDelay: '1100',
+          animationDelay: '1200',
           buttonText: '',
         },
         // {
