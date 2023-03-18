@@ -37,6 +37,27 @@ const Header = () => {
         this.nextSibling.classList.remove('header__route-bg-animation');
       });
     }
+
+    // closing side navbar 
+    const navLinksDisplay = document.getElementById('header__nav-links');
+    const link = document.getElementsByClassName('header__links');
+    const iconMiddleLine = document.getElementById(
+      'header__hamburger-middle-line'
+    );
+    const iconTopLine = document.getElementById('header__hamburger-top-line');
+    const iconBottomLine = document.getElementById(
+      'header__hamburger-bottom-line'
+    );
+    for (var i = 0; i < link.length; i++) {
+      link[i].addEventListener('click', function () {
+        navLinksDisplay.style.display = 'none';
+        iconMiddleLine.style.display = 'inline-block';
+        iconTopLine.classList.remove('header__icon-line-animate');
+        iconBottomLine.classList.remove('header__icon-bottom-line-animate');
+      })
+    }
+
+
   });
 
   function showHideNavbar() {
@@ -108,7 +129,7 @@ const Header = () => {
                   data-aos="fade-down"
                   data-aos-delay="0"
                 >
-                  <a href="#about">About</a>
+                  <a className='header__links' href="#about">About</a>
                 </li>
                 <div className="header__route-bg"></div>
               </div>
@@ -119,7 +140,7 @@ const Header = () => {
                   data-aos="fade-down"
                   data-aos-delay="200"
                 >
-                  <a href="#work">Works</a>
+                  <a className='header__links' href="#work">Works</a>
                 </li>
                 <div className="header__route-bg"></div>
               </div>
@@ -130,7 +151,7 @@ const Header = () => {
                   data-aos="fade-down"
                   data-aos-delay="300"
                 >
-                  <a href="#contact">Contact me</a>
+                  <a className='header__links' href="#contact">Contact me</a>
                 </li>
                 <div className="header__route-bg"></div>
               </div>
