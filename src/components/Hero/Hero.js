@@ -9,7 +9,8 @@ import React, { useEffect } from 'react';
 
 import '../../styles/Hero/Hero.scss';
 
-import Coding from '../../assets/videos/coding.gif';
+// import Coding from '../../assets/videos/coding.gif';
+import sphere from '../../assets/videos/sphere.mp4'
 
 const Hero = () => {
   useEffect(() => {
@@ -23,6 +24,25 @@ const Hero = () => {
         alphbets[i].classList.add('alphabet-animated');
       });
     }
+
+    // Speeding up video upon Hover 
+    const video = document.querySelector('video');
+    video.addEventListener('mouseover', function () {
+      video.playbackRate = 2
+      video.classList.add('hero__video')
+    })
+    video.addEventListener('mouseout', function () {
+      video.playbackRate = 1
+      video.classList.remove('hero__video')
+    })
+
+    // Adding parallax effect to video 
+    const parallax = document.getElementById("parallax");
+    window.addEventListener("scroll", function () {
+      let offset = window.pageYOffset;
+      parallax.style.top = offset * 0.5 + "px";
+    });
+
     // return () => {
     // };
   }, []);
@@ -133,8 +153,10 @@ const Hero = () => {
               </a>
             </div>
           </div>
-          <div className="hero__gif" data-aos="fade-right" data-aos-delay="200">
-            <img src={Coding} alt="gif" />
+          <div className="hero__gif" id="parallax" data-aos="zoom-in" data-aos-delay="200">
+            <video loop autoPlay muted>
+              <source src={sphere} type="video/mp4"></source>
+            </video>
           </div>
           {/* <div className="hero__background-text">
                         <h1>
