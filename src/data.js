@@ -6,7 +6,7 @@ export const config = {
         {
           heading: 'Sensor Monitoring System',
           description:
-            'I have created this project to minimzise this risk of fire hazards. This website helps us to monitor real time data various sensors for example: MQ2 Gas sensor and DHT11 Temperature and Humidity sensor.',
+            'I have created this wesbite to minimzise this risk of fire hazards. This website helps us to monitor real time data various sensors, For example: MQ2 Gas sensor and DHT11 Temperature and Humidity sensor.',
           animationDelay: '300',
           buttonLink: 'https://sensor-monitor.netlify.app/',
           buttonText: 'CHECK OUT',
@@ -27,11 +27,18 @@ export const config = {
           buttonText: 'CHECK OUT',
         },
         {
-          heading: 'DigiShop',
-          description: 'React Native shopping app.',
+          heading: 'Meta Solutions',
+          description: 'Service Company landing page built using React.js and Bootstrap.',
           animationDelay: '900',
+          buttonLink: 'https://metasolutions.netlify.app/',
           buttonText: 'CHECK OUT',
         },
+        // {
+        //   heading: 'DigiShop',
+        //   description: 'React Native shopping app.',
+        //   animationDelay: '900',
+        //   buttonText: 'CHECK OUT',
+        // },
         // {
         //   heading: 'TextUtils',
         //   description:
