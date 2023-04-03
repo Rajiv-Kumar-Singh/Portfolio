@@ -48,13 +48,16 @@ const Header = () => {
     const iconBottomLine = document.getElementById(
       'header__hamburger-bottom-line'
     );
-    for (var i = 0; i < link.length; i++) {
-      link[i].addEventListener('click', function () {
-        navLinksDisplay.style.display = 'none';
-        iconMiddleLine.style.display = 'inline-block';
-        iconTopLine.classList.remove('header__icon-line-animate');
-        iconBottomLine.classList.remove('header__icon-bottom-line-animate');
-      })
+
+    if (window.screen.width < 768) {
+      for (var i = 0; i < link.length; i++) {
+        link[i].addEventListener('click', function () {
+          navLinksDisplay.style.display = 'none';
+          iconMiddleLine.style.display = 'inline-block';
+          iconTopLine.classList.remove('header__icon-line-animate');
+          iconBottomLine.classList.remove('header__icon-bottom-line-animate');
+        })
+      }
     }
 
 
@@ -126,6 +129,7 @@ const Header = () => {
                 <li
                   className="header__route"
                   ref={navLinkAbout}
+                  data-aos-once="true"
                   data-aos="fade-down"
                   data-aos-delay="0"
                 >
@@ -137,6 +141,7 @@ const Header = () => {
                 <li
                   className="header__route"
                   ref={navLinkWork}
+                  data-aos-once="true"
                   data-aos="fade-down"
                   data-aos-delay="200"
                 >
@@ -148,6 +153,7 @@ const Header = () => {
                 <li
                   className="header__route"
                   ref={navLinkContact}
+                  data-aos-once="true"
                   data-aos="fade-down"
                   data-aos-delay="300"
                 >

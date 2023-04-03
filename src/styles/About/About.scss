@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 .about {
   position: relative;
   top: 0;
@@ -16,7 +16,7 @@
     position: relative;
     top: 0;
     text-align: left;
-    font-family: "RedWingBold";
+    font-family: 'RedWingBold';
     font-weight: bolder;
     letter-spacing: 0.2em;
     text-transform: uppercase;
@@ -27,7 +27,7 @@
       position: absolute;
       bottom: 0;
       left: 0;
-      content: "";
+      content: '';
       width: 10%;
       height: 0.05em;
       background-color: #00ffff;
@@ -77,6 +77,11 @@
     position: relative;
     top: 0;
     width: 28vw;
+
+    &:hover {
+      animation: bounce 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite
+        alternate;
+    }
     a {
       text-decoration: none;
       color: #ffffff;
@@ -84,7 +89,7 @@
         position: absolute;
         top: -0.75em;
         left: -0.3em;
-        font-family: "RedWingBold";
+        font-family: 'RedWingBold';
         letter-spacing: 0.1em;
         font-size: 8em;
         font-weight: 900;
@@ -99,7 +104,7 @@
       h2 {
         position: relative;
         z-index: 2;
-        font-family: "RedWingBold";
+        font-family: 'RedWingBold';
         letter-spacing: 0.1em;
         font-weight: 200;
         font-size: 2em;
@@ -110,9 +115,19 @@
           -webkit-text-stroke: 1px rgb(249 249 249);
         }
 
-        span:hover {
-          animation: hoverAnimation 1s ease-in-out;
-          animation-fill-mode: forwards;
+        // span:hover {
+        //   animation: hoverAnimation 1s ease-in-out;
+        //   animation-fill-mode: forwards;
+        // }
+      }
+
+      &:hover {
+        transition: all 1s ease-in-out;
+        h2 {
+          span {
+            animation: hoverAnimation 0.5s ease-in-out;
+            animation-fill-mode: forwards;
+          }
         }
       }
 
@@ -131,6 +146,16 @@
         }
       }
 
+      .about__read-more {
+        color: #00ffff;
+      }
+
+      &:hover {
+        .about__read-more {
+          color: #ff6347;
+        }
+      }
+
       ul {
         font-weight: lighter;
         max-width: 100%;
@@ -146,6 +171,10 @@
         }
       }
     }
+  }
+
+  &__read-more {
+    margin-top: 0.5em;
   }
 
   // &__details:nth-child(1) {
@@ -257,5 +286,16 @@
   }
   100% {
     color: #ffffff;
+  }
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(3px);
+    transform: translateY(3px);
+  }
+  to {
+    transform: translateY(-3px);
+    transform: translateY(-3px);
   }
 }

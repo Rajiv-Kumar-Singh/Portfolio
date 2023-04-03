@@ -121,6 +121,7 @@ const About = () => {
                   I am <span>Rajiv Kumar Singh.</span> <br /> Highly passoinate
                   front-end Developer with more than 6 months of experience.
                 </p>
+                <p className="about__read-more">Read more...</p>
               </Link>
             </div>
             <div
@@ -143,6 +144,7 @@ const About = () => {
                   highly responsive frontend of websites using React.js and
                   Vue.js
                 </p>
+                <p className="about__read-more">Read more...</p>
               </Link>
             </div>
             <div
@@ -173,6 +175,7 @@ const About = () => {
                     <span>Clear Exam</span> - HTML Developer{" "}
                   </li>
                 </ul>
+                <p className="about__read-more">Read more...</p>
               </Link>
             </div>
             <div
@@ -195,6 +198,7 @@ const About = () => {
                   Completed Engineering in Electronics and Instrumentation
                   Engineering from National Institute of Technology, Agartala
                 </p>
+                <p className="about__read-more">Read more...</p>
               </Link>
             </div>
           </div>
